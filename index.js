@@ -28,8 +28,10 @@ document.addEventListener("DOMContentLoaded", ()=> {
         song.src= songList[currentSong]
         if(currentSong > 2){
             currentSong = 0
+            song.src= songList[currentSong]
         }
         song.play()
+        console.log(currentSong)
 })
 
 })
