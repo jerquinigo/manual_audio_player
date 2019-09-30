@@ -1,19 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>web audio player</title>
-    <script src="./index.js"></script>
-</head>
-<body>
-    <div id="mainDiv">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>web audio player</title>
+		<script src="./index.js"></script>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+		/>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+		<script
+			src="https://kit.fontawesome.com/3f97562b87.js"
+			crossorigin="anonymous"
+		></script>
+	</head>
+	<body>
+		<div id="mainDiv"></div>
 
-    </div>
-    <button id="button">click me pls</button>
-    <button id="button2">pause</button>
-    <button id="button3">next</button>
-    
-</body>
+		<div class="container">
+			<div class="row">
+				<div class="col s12 m12">
+					<div class="card">
+						<div class="card-image">
+							<img src="./oldTv.jpg" />
+							<span class="card-title">Mp3 player</span>
+						</div>
+						<div class="card-content">
+							<div class="container">
+								<div class="row">
+									<div class="s4 m4" id="button">
+										<button id="button2">pause</button>
+									</div>
+									<div id="playerIcon" class="s4 m4">
+										<div  id="iconPlay">
+										<i class="fas large fa-play"></i>
+										</div>
+										<div hidden id="iconPause">
+										<i class="fas large fa-pause "></i>
+										</div>
+									</div>
+									<div class="s4 m4">
+										<button id="button3">next</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="card-action">
+							<a href="#">This is a link</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
 </html>
